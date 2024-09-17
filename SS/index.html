@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Sentinel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Silent Sentinel</h1>
+            <p>Your safety, a click away.</p>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="description">
+                    <h2>Instantly Share Your Live Location</h2>
+                    <p>Press the button to notify trusted sources with your location for immediate assistance.</p>
+                </div>
+                <div class="action">
+                    <button id="locationBtn" class="location-btn">Send Live Location</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Silent Sentinel - Empowering Women's Safety</p>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+    <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js"></script>
+
+<!-- Firebase Configuration -->
+<script>
+  // Replace these with your Firebase config values
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFpsS6_5VV7_8zvtikf2G-aN_F9KS76rk",
+    authDomain:"livelocationproject-f4cce.firebaseapp.com",
+    databaseURL:https://livelocationproject-f4cce-default-rtdb.firebaseio.com/
+    projectId: "livelocationproject-f4cce",
+    storageBucket:  "livelocationproject-f4cce.appspot.com",
+    messagingSenderId:  "619329170093",
+    appId: "1:619329170093:web:f16985d14318f59751b424",
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.database();
+</script>
+</body>
+</html>
